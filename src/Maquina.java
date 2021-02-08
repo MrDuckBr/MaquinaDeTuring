@@ -6,7 +6,7 @@ public class Maquina {
     LeituraArquivo leituraArquivo;
     EscritaArquivo escritaArquivo;
     ArrayList<Transicoes> transicoes;
-    ArrayList<String> fita;
+    ArrayList<String> fita, escrita;
     String  leituraDaFita;
     int posicaoDaCabecaDeLeitura = 0;
 
@@ -17,6 +17,7 @@ public class Maquina {
     public Maquina() throws IOException {
         leituraArquivo = new LeituraArquivo();
         escritaArquivo = new EscritaArquivo("saida");
+        escrita = new ArrayList<>();
     }
 
     public void inicializacaoMaquina()throws FileNotFoundException {
@@ -49,12 +50,16 @@ public class Maquina {
 
     public void proximoEstado(String proximoEstado, String leitura){
         estado = encontraTransicao(proximoEstado, leitura);
+        if(estado == null){
+           escritaArquivo.gravarLinha(escrita);
+            // System.out.println("Estado ao qual deseja ir nao existe " + proximoEstado);
+        }
     }
 
     public void escreveFita(String index, int posicao, String estado)  {
         fita.set(posicao, index);
         System.out.println(ajustaFita(posicao,estado));
-          //  escritaArquivo.gravaLinha(ajustaFita(posicao,estado));
+        escrita.add(ajustaFita(posicao,estado));
     }
 
     public void verificaEstadoFinal(boolean ver){
