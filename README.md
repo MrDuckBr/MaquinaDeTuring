@@ -65,12 +65,12 @@ B{q5}11111BBB
 
 ## Usando o programa:
 
-####**Compilar**
+#### **Compilar**
 ```
 javac Principal.java
 ```
 
-####**Executar**
+#### **Executar**
 ```
 java Principal
 ```
