@@ -1,3 +1,6 @@
+/**
+ * Classe usada para armazenar as transicoes na forma de objetos
+ */
 public class Transicoes {
 
     private String estadoAtual;
