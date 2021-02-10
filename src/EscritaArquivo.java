@@ -1,12 +1,10 @@
-/**
- * Classe que escreve o arquivo de saida do programa
- *
- *
- */
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Classe que escreve o arquivo de saida do programa
+ */
 public class EscritaArquivo {
 
 

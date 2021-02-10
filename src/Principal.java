@@ -1,11 +1,11 @@
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  * Classe Principal que inicializa a maquina de Turing
  *
  *
  */
-import java.io.IOException;
-import java.util.Scanner;
-
 
 public class Principal {
 

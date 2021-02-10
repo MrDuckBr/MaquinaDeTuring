@@ -1,11 +1,11 @@
-/**
- * Classe que contém todo o core do programa
- *
- * @author Walisson Mendes Ferreira
- */
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Classe que contem o core do programa
+ *
+ * @author Walisson Mendes Ferreira
+ */
 public class Maquina {
     LeituraArquivo leituraArquivo;
     EscritaArquivo escritaArquivo;

@@ -1,12 +1,12 @@
-/**
- * Classe que lê o arquivo
- */
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Classe que le o arquivo
+ */
 public class LeituraArquivo {
     ArrayList<String> estados, alfabetoEntrada, alfabetoFita, fitaInicial;
     ArrayList<Transicoes> transicoes;
